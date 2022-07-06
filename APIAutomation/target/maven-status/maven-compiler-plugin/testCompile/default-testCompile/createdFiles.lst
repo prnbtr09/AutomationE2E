@@ -1,0 +1,6 @@
+petstore\Tags.class
+petstore\Pet.class
+petstore\PetSchemaTests.class
+petstore\PetStore.class
+petstore\Category.class
+petstore\PetCRUD.class
