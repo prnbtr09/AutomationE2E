@@ -24,6 +24,10 @@ public class Configurations {
         return configProp;
     }
 
+    public static String getBrowser(){
+        return System.getProperty("browser",configProp.getProperty("browser"));
+    }
+
     public static void setConfigProp(Properties configProp) {
         Configurations.configProp = configProp;
     }

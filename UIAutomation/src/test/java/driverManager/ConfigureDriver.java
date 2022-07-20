@@ -10,7 +10,7 @@ public class ConfigureDriver {
     public WebDriver driver;
     Properties configProp=this.configProp;
     private FileInputStream fileInputStream;
-    private String browserName=Configurations.getConfigProp().getProperty("browser");
+    private String browserName=Configurations.getBrowser();
     private String env = Configurations.getConfigProp().getProperty("env");
 
     public void setUpDriver() throws Exception {
