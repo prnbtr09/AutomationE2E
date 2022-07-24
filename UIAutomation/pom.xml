@@ -30,6 +30,13 @@
             <artifactId>webdrivermanager</artifactId>
             <version>${webdrivermanager.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.github.sukgu/automation -->
+        <dependency>
+            <groupId>io.github.sukgu</groupId>
+            <artifactId>automation</artifactId>
+            <version>0.1.4.1</version>
+        </dependency>
+
 
     </dependencies>
     <profiles>

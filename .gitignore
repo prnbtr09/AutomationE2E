@@ -1,5 +1,4 @@
-.idea
+.idea/*
 target/
 .idea/*.xml
 UIAutomation/test-output
-.idea

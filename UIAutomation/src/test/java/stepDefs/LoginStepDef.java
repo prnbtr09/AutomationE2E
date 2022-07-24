@@ -7,6 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import pages.LoginPage;
+import io.github.sukgu.*;
 
 import java.lang.invoke.MethodHandle;
 import java.lang.invoke.MethodHandles;
@@ -31,10 +32,11 @@ public class LoginStepDef {
     public void loginToApp(DataTable table) {
         loginPageObjects = new LoginPage(driver);
         List<Map<String, String>> credentials = table.asMaps(String.class, String.class);
-        loginPageObjects.userName.sendKeys(credentials.get(0).get("UserName"));
-        loginPageObjects.password.sendKeys(credentials.get(0).get("Password"));
-        loginPageObjects.loginButton.click();
+//        loginPageObjects.userName.sendKeys(credentials.get(0).get("UserName"));
+//        loginPageObjects.password.sendKeys(credentials.get(0).get("Password"));
+//        loginPageObjects.loginButton.click();
         logger.info("User has logged in to app");
+
 
 
     }
