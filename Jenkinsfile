@@ -37,11 +37,7 @@ pipeline {
           }
         }
 
-        stage('') {
-          steps {
-            bat 'APIAutomation/target'
-          }
-        }
+      
 
       }
     }
