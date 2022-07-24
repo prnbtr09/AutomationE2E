@@ -22,7 +22,7 @@ pipeline {
 
         stage('APIAutomation') {
           steps {
-            bat 'mvn test -pl APIAutomation'
+            echo 'API Automation'
           }
         }
 
