@@ -1,4 +1,4 @@
-#@ui @login
+@ui @login
 Feature: Home functionality
 
 

@@ -32,9 +32,9 @@ public class LoginStepDef {
     public void loginToApp(DataTable table) {
         loginPageObjects = new LoginPage(driver);
         List<Map<String, String>> credentials = table.asMaps(String.class, String.class);
-//        loginPageObjects.userName.sendKeys(credentials.get(0).get("UserName"));
-//        loginPageObjects.password.sendKeys(credentials.get(0).get("Password"));
-//        loginPageObjects.loginButton.click();
+        loginPageObjects.userName.sendKeys(credentials.get(0).get("UserName"));
+        loginPageObjects.password.sendKeys(credentials.get(0).get("Password"));
+        loginPageObjects.loginButton.click();
         logger.info("User has logged in to app");
 
 

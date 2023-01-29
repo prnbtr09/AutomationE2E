@@ -11,7 +11,7 @@ public class ConfigureDriver {
     Properties configProp=this.configProp;
     private FileInputStream fileInputStream;
     private String browserName=Configurations.getBrowser();
-    private String env = Configurations.getConfigProp().getProperty("env");
+    private String env = Configurations.getEnvironment();
 
     public void setUpDriver() throws Exception {
         CreateDriver.getInstance().setDriver(this.browserName, this.env.toString());

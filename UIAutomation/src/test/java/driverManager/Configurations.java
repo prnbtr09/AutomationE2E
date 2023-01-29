@@ -28,6 +28,11 @@ public class Configurations {
         return System.getProperty("browser",configProp.getProperty("browser"));
     }
 
+    public static String getEnvironment(){
+       return System.getProperty("env",configProp.getProperty("env"));
+
+    }
+
     public static void setConfigProp(Properties configProp) {
         Configurations.configProp = configProp;
     }
