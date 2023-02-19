@@ -16,7 +16,7 @@ pipeline {
         stage('APIAutomation') {
           steps {
             echo 'API Automation'
-            echo "suite name is ${SUITENAME}"
+            echo "suite name is ${CREDENTIALS}"
           }
         }
 
