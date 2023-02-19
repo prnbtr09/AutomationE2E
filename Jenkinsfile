@@ -12,7 +12,7 @@ pipeline {
         stage('APIAutomation') {
           steps {
             echo 'API Automation'
-            echo ${GIT_CHECKOUT_DIR}
+            echo "dirctor name is ${GIT_CHECKOUT_DIR}"
           }
         }
 
