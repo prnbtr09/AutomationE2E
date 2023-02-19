@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  environment{
+    SUITENAME='Regression suite'
+  }
   stages {
    stage('UIAutomation') {
       parallel {
@@ -12,7 +15,7 @@ pipeline {
         stage('APIAutomation') {
           steps {
             echo 'API Automation'
-            echo "dirctor name is ${GIT_CHECKOUT_DIR}"
+            echo "suite name is ${SUITENAME}"
           }
         }
 
