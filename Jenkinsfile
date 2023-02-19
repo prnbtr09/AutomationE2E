@@ -5,7 +5,7 @@ pipeline {
     CREDENTIALS= credentials('7e79e38c-947a-4aa3-b579-6e23c2df9f0b')
   }
   parameters{
-    string(name: 'Suite', defaultValue: '', description: 'Suite Type
+    string(name: 'Suite', defaultValue: '', description: 'Suite Type')
     choice(name: 'AutomationType', defaultValue: '', description: 'Automation type')
   }
   stages {
@@ -20,7 +20,8 @@ pipeline {
         stage('APIAutomation') {
           steps {
             echo 'API Automation'
-            echo "suite name is ${CREDENTIALS}"
+            echo "suite name is ${Suite}"
+            echoe "Automation type is ${AutomationType}"
           }
         }
 
