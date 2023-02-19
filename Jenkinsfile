@@ -21,7 +21,7 @@ pipeline {
           steps {
             echo 'API Automation'
             echo "suite name is ${Suite}"
-            echoe "Automation type is ${AutomationType}"
+            echo "Automation type is ${AutomationType}"
           }
         }
 
