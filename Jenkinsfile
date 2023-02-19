@@ -1,7 +1,6 @@
 pipeline {
   agent any
   stages {
-   
    stage('UIAutomation') {
       parallel {
         stage('UIAutomation') {
@@ -13,6 +12,7 @@ pipeline {
         stage('APIAutomation') {
           steps {
             echo 'API Automation'
+            echo ${GIT_CHECKOUT_DIR}
           }
         }
 
