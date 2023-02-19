@@ -4,6 +4,10 @@ pipeline {
     SUITENAME='Regression suite'
     CREDENTIALS= credentials('7e79e38c-947a-4aa3-b579-6e23c2df9f0b')
   }
+  parameters{
+    string(name: 'Suite', defaultValue: '', description: 'Suite Type
+    choice(name: 'AutomationType', defaultValue: '', description: 'Automation type')
+  }
   stages {
    stage('UIAutomation') {
       parallel {
