@@ -1,11 +1,6 @@
 pipeline {
   agent any
- stages {
-   stage('GitCheckout') {
- steps {
-        git(url: 'https://github.com/prnbtr09/AutomationE2E.git', branch: 'master', credentialsId: '24a9edca-3ed2-4b07-b90f-fd439eb65fa8')
-      }   
-   }
+  stages {
    
    stage('UIAutomation') {
       parallel {
