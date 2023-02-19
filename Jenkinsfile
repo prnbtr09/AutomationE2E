@@ -6,7 +6,7 @@ pipeline {
   }
   parameters{
     string(name: 'Suite', defaultValue: '', description: 'Suite Type')
-    choice(name: 'AutomationType', defaultValue: '', description: 'Automation type')
+    choice(name: 'AutomationType', choices: ['UI','API'], description: 'Automation type')
   }
   stages {
    stage('UIAutomation') {
