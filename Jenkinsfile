@@ -1,7 +1,7 @@
 pipeline {
   agent any
 
-  }
+  
   stages {
     stage('GitCheckout') {
       steps {
@@ -40,4 +40,5 @@ pipeline {
     }
 
   }
+}
 }
